@@ -7,24 +7,23 @@ Todos los archivos están subidos a campus.
 El largo de los registros es entre 10 y 11 minutos
 Fs = 512
 
-FECHA DE ENTREGA: 14/04/2025 23:59.59 GMT-3
+FECHA DE ENTREGA: 03/08/2025 23:59.59 GMT-3
 
 
 |---- BASELINE --------|
 |---- PESTANEO ------|
-|---- MUSICA CONOCIDA ----|
-|---- MUSCIA DESCONOCIDA ------|
-|---- PESTANEO ------|
-|---- LEYENDO REDES SOCIALES ----|
-|---- LEYENDO TECNICAS DIGITALES ------|
-|---- OJOS CERRADOS ------|
+|---- OJOS CERRADOS ----|
+|---- MIRAR C/ANTEOJOS ------|
+|---- MIRAR S/ANTEOJOS ------|
+|---- ESCUCHANDO ESPAÑOL ----|
+|---- ESCUCHANDO INGLES ------|
 
 * Baseline: esta parte la pueden utilizar para tener ejemplos negativos de cualquier cosa que deseen detectar.  Por 
 ejemplo si quieren detectar que algo cambia cuando hay "imaginación en colores violeta", extraen features de ese momento y de
 este e intentan armar un clasificador.
 * Pestaneos: los pestaneos son eventos temporales que pueden ser detectados directamente en la señal.
 * Ojos cerrados: puede aparecer un aumento de la señal en la banda alfa, la potencia de 10 Hz.
-* Leyendo Técnicas digitales: puede aparecer un aumento en señales de alta frecuencia (30,40,50 Hz).  Puede aparecer tamibién
+* Mirar s/anteojos o escuchando ingles: puede aparecer un aumento en señales de alta frecuencia (30,40,50 Hz).  Puede aparecer también
 un aumento en la potencia de la banda alfa (x aburrimiento).
 
 Objetivo:

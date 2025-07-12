@@ -53,7 +53,7 @@ def QLearning(env, learning, discount, epsilon, min_eps, episodes):
             if i >= (episodes - 20):
                 env.render()
                 
-            # Determine next action - epsilon greedy strategy
+            # Determine next action - epsilon greedy strategy (epsilon moves from 1 to 0)
             if np.random.random() < 1 - epsilon:
                 action = np.argmax(Q[state_adj[0], state_adj[1]]) 
             else:
