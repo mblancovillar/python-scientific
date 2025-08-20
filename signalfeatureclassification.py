@@ -392,8 +392,8 @@ def featureextractor():
     fig = plt.figure()
     ax1 = fig.add_subplot(111)
 
-    ax1.scatter(afeatures1[:,0], afeatures1[:,1], s=10, c='b', marker="x", label='Open')
-    ax1.scatter(afeatures2[:,0], afeatures2[:,1], s=10, c='r', marker="o", label='Closed')
+    ax1.scatter(afeatures1[:,0], afeatures1[:,1], s=40, c='b', marker="x", label='Sick')
+    ax1.scatter(afeatures2[:,0], afeatures2[:,1], s=40, c='r', marker="o", label='Healthy')
     plt.xlabel('PSD O2')
     plt.ylabel('PSD O1')
     plt.legend(loc='upper left')

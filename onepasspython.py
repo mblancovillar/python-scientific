@@ -1,6 +1,6 @@
 """
 ==================
-One   Pass  Python
+One Pass  Python
 ==================
 
 This is based on: http://cs231n.github.io/python-numpy-tutorial/
@@ -17,6 +17,7 @@ def f(x=0):
     return 4
 
 variable = f()
+
 
 # In[1]: Tuples and lists.
 
@@ -68,6 +69,14 @@ print(x)  # Prints "8"
 y = 2.5
 print(type(y)) # Prints "<class 'float'>"
 print(y, y + 1, y * 2, y ** 2) # Prints "2.5 3.5 5.0 6.25"
+
+# %%
+# Integer division
+print('3 / 2 =', 3 / 2)     # Floating point division
+print('3 // 2 =', 3 // 2)   # Integer division
+print('3 / 2.0 =', 3 / 2.0) # Floating point division
+print('3 // 2.0 =', 3 // 2.0)   # Integer division but the resut is float
+print('51 % 2 =', 51 % 2)   # Modulus operation
 
 # In[1]: id() gives you the memory location of a certain variable.
 
@@ -338,7 +347,7 @@ for letter, names in itertools.groupby(names, first_letter):
     print(letter, list(names))      # Names is a generator
 
 # In[1]:
-print('Tuples are like un-indexed lists and they can be used as element key')
+print('Remember that tuples are like un-indexed lists and they can be used as element key')
 print('Tuples are inmutable objects, like constants, they do not support item assignment.')
 print('They are like inmutable C structs.')
 d = {(x, x + 1): x for x in range(10)}  # Create a dictionary with tuple keys
@@ -359,6 +368,14 @@ def helloguys(name='Joe Doe', loud=False):
 
 helloguys('Bob') # Prints "Hello, Bob"
 helloguys('Jenny', loud=True)  # Prints "HELLO, FRED!"
+
+
+def filterfunction(val,Fs=250, filtertype='iir'):
+    print(val, Fs, filtertype)
+    
+filterfunction([1,2], filtertype='sss')
+
+
 
 # In[1]:
 
@@ -442,24 +459,7 @@ vehicles = [Car('BMW'), ElectricCar('Tesla', 200), Scooter()]
 for vehicle in vehicles:
     vehicle.honk()
         
-    
-# In[1]:
-print('Check python system configuration.')
-import sys
 
-print ('Input line parameters')
-print (sys.argv)
-
-print ('Byte order:'+str(sys.byteorder))
-print (sys.exec_prefix)
-print (sys.executable)
-print (sys.path)
-print (sys.version_info)
-print (sys.platform)
-
-print (sys.argv[0])
-print ('Modules =======')
-print (sys.modules)
 
 # In[1]:
 print('Sets structures check for existence so they can use to identify duplicates.')
@@ -513,3 +513,21 @@ eeg = data[:,2]
 # Ojo con el filtro OR.
 filteredeeg = eeg[eeg>50]
 eegfiltered = np.logical_or(eeg>10,eeg<-40) 
+
+# In[1]:
+print('Check python system configuration.')
+import sys
+
+print ('Input line parameters')
+print (sys.argv)
+
+print ('Byte order:'+str(sys.byteorder))
+print (sys.exec_prefix)
+print (sys.executable)
+print (sys.path)
+print (sys.version_info)
+print (sys.platform)
+
+print (sys.argv[0])
+print ('Modules =======')
+print (sys.modules)
