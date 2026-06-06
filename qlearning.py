@@ -42,7 +42,7 @@ def QLearning(env, learning, discount, epsilon, min_eps, episodes):
         done = False
         tot_reward, reward = 0,0
         state = env.reset()
-        state=state[0]
+        state=state[0] 
         
         # Discretize state
         state_adj = (state - env.observation_space.low)*np.array([10, 100])

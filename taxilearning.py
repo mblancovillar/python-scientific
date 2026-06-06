@@ -91,7 +91,7 @@ while (not done) and (epochs<400):
 
     epochs += 1
 
-     
+
 # Let's see what is happening..... this is 100% exploration without any learning.
 from time import sleep, time
 

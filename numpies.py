@@ -51,7 +51,7 @@ y = np.array( ((11,12,13), (21,22,23), (31,32,33)) )
 print ('Element at 0, 1:')
 print  (y[0][1])
 
-# Check Array size
+# Check Array size. numberofindexes
 print (y.ndim)
 
 # Shape, size, of the array.

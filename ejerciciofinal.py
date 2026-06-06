@@ -7,7 +7,9 @@ Todos los archivos están subidos a campus.
 El largo de los registros es entre 10 y 11 minutos
 Fs = 512
 
-FECHA DE ENTREGA: 03/08/2025 23:59.59 GMT-3
+FECHA DE ENTREGA: 31/05/2026 23:59.59 GMT-3 (7/06/2026 23:59.59 GMT)
+x campus
+FORMATO DE LA ENTREGA DE ARXIV: https://arxiv.org/help/submit#submissions
 
 
 |---- BASELINE --------|

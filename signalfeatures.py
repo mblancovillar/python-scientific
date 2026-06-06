@@ -156,7 +156,7 @@ def pfd(a):
 
 
 
-# Sampling frequency of 128 Hz
+# Sampling frequency of 512 Hz
 
 print('Temporal Features')
 
@@ -263,7 +263,6 @@ y_inv[y_inv == 0] = 1e-10
 
 sum1 = [log(val) for val in y_pred]
 sum2 = [log(val) for val in y_inv]
-
 
 
 s1 = sum1 * y

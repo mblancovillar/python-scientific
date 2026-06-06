@@ -47,30 +47,32 @@ print("Largo 1 %2d" % len(eeg))
 print("Largo 2 %2d" % len(eegf1))
 print("Largo 3 %2d" % len(eegf2))
 
-plt.plot(eeg,'r', label='EEG')
-plt.xlabel('t');
-plt.ylabel('eeg(t)');
-plt.title(r'Original EEG Signal')     # r'' representa un raw string que no tiene caracteres especiales
-plt.ylim([-2000, 2000]);
-plt.xlim([0,len(eeg)])
-plt.savefig('images/signal.png')
+plt.plot(eeg, 'r', label='EEG')
+plt.xlabel('t', fontsize=20)
+plt.ylabel('eeg(t)', fontsize=20)
+plt.title(r'Señal Original', fontsize=20, fontweight='bold')
+plt.ylim([-2000, 2000])
+plt.xlim([0, len(eeg)])
+plt.yticks([-2000, -1000, 0, 1000, 2000], fontsize=16)
+plt.xticks(fontsize=16)
+plt.tight_layout()
+plt.savefig('/Users/rramele/lectures/alai/Pictures/signal.png', dpi=150)
 plt.show()
 
 
-# La operación de convolución permite implementar el suavizado del Moving Average
 windowlength = 10
 avgeeg = np.convolve(eeg, np.ones((windowlength,))/windowlength, mode='same')
 
-# El kernel/máscara está compuesto de 10 valores de 1/10.  Cuando esos valores se suman para cada posición, implica que se reemplaza el valor por el promedio
-# de los 5 valores anteriores y 4 posteriores.
-
-plt.plot(avgeeg,'r', label='EEG')
-plt.xlabel('t');
-plt.ylabel('eeg(t)');
-plt.title(r'Smoothed EEG Signal')     
-plt.ylim([-2000, 2000]);
-plt.xlim([0,len(avgeeg)])
-plt.savefig('images/smoothed.png')
+plt.plot(avgeeg, 'r', label='EEG')
+plt.xlabel('t', fontsize=20)
+plt.ylabel('eeg(t)', fontsize=20)
+plt.title(r'Señal Suavizada', fontsize=20, fontweight='bold')
+plt.ylim([-2000, 2000])
+plt.xlim([0, len(avgeeg)])
+plt.yticks([-2000, -1000, 0, 1000, 2000], fontsize=16)
+plt.xticks(fontsize=16  )
+plt.tight_layout()
+plt.savefig('/Users/rramele/lectures/alai/Pictures/smoothed.png', dpi=150)
 plt.show()
 
 

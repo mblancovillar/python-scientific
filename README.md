@@ -177,6 +177,7 @@ Probably, there are TONS of online resource to learn python.  Those listed here 
 * Very handy and pragmatic coding guidelines: https://guicommits.com/organize-python-code-like-a-pro/
 * Join this channel for Q&A: https://itba-ecd-python.slack.com
 * Python College Algebra - https://www.youtube.com/watch?v=i7vOAcUo5iA
+* Learng all the algorithms - https://github.com/TheAlgorithms/Python
 
 # Something else about Git
 
